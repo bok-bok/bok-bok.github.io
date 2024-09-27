@@ -6,7 +6,7 @@ category: preprints
 excerpt: 'Md Yousuf Harun<sup>\*</sup>, <b>Kyungbok Lee<sup>\*</sup></b>, Jhair Gallardo,  
 Giri Krishnan, Christopher Kanan'
 date: 2024-09-25
-venue: 'Neurips, 2024'
+venue: 'Neurips'
 
 paperurl: 'https://arxiv.org/pdf/2405.15018'
 ---
