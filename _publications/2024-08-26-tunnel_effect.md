@@ -1,7 +1,7 @@
 ---
 title: "What Variables Affect Out-Of-Distribution Generalization in Pretrained Models?"
 collection: publications
-category: preprints
+category: conferences
 # permalink: /publication/2024-02-17-paper-title-number-4
 excerpt: 'Md Yousuf Harun<sup>\*</sup>, <b>Kyungbok Lee<sup>\*</sup></b>, Jhair Gallardo,  
 Giri Krishnan, Christopher Kanan'
