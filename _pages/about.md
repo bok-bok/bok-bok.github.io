@@ -10,5 +10,6 @@ redirect_from:
 I am a senior undergraduate student at the University of Rochester. 
 
 
-My research focuses on **multi-modal learning**.
-
+My ultimate research goal is to create AI systems that can support complex tasks in real-life scenarios. To
+achieve this, I aim to work on advancing **multimodal learning** to enable AI to seamlessly integrate and
+understand audio, visual, and language information, improving AI’s perception and interaction with the world.
