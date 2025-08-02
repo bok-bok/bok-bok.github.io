@@ -63,9 +63,24 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+/* Enhanced body styling */
+body {
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Main container styling */
+.main-container {
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
 a {
   color: #1772d0;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 a:focus,
@@ -82,11 +97,13 @@ p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
+  line-height: 1.6;
 }
 
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
+  color: #2c3e50;
 }
 
 h2 {
@@ -94,12 +111,22 @@ h2 {
   font-weight: normal;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 22px;
+  color: #2c3e50;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 700;
+  color: #2c3e50;
+  transition: color 0.3s ease;
+}
+
+.papertitle:hover {
+  color: #1772d0;
 }
 
 .name {
@@ -107,17 +134,29 @@ h2 {
   margin: 0;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 32px;
+  color: #2c3e50;
+  text-align: center;
+  font-weight: 700;
 }
 
 .one {
-  width: 160px;
-  height: 160px;
+  width: 100%;
+  height: auto;
   position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.one:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
 
 .two {
-  width: 160px;
-  height: 160px;
+  width: 100%;
+  height: auto;
   position: absolute;
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
@@ -139,4 +178,116 @@ span.highlight {
     padding: 20px;
     display: inline-block;
     border-radius: 10px;
+}
+
+/* Simple spotlight badge */
+.spotlight-badge {
+  display: inline-block;
+  background: #ffd700;
+  color: #2c3e50;
+  padding: 4px 6px;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: bold;
+  margin-left: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Enhanced paper row styling */
+.paper-row {
+  background: white;
+  border-radius: 8px;
+  margin: 15px 0;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+}
+
+.paper-row:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border-left-color: #1772d0;
+}
+
+/* Uniform conference badge styling */
+.conference-badge {
+  display: inline-block;
+  background: #6c757d;
+  color: white;
+  padding: 4px 6px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: bold;
+  margin-right: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Enhanced profile section */
+.profile-section {
+  background: white;
+  color: #2c3e50;
+  padding: 15px;
+  text-align: center;
+}
+
+.profile-section .name {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.profile-section p {
+  color: #6c757d;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.profile-section a {
+  color: #1772d0;
+  font-weight: bold;
+}
+
+.profile-section a:hover {
+  color: #f09228;
+}
+
+/* Simple links styling */
+.links-section {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.links-section a {
+  color: #6c757d;
+  font-size: 14px;
+  margin: 0 5px;
+}
+
+.links-section a:hover {
+  color: #1772d0;
+}
+
+/* Enhanced research section */
+.research-section {
+  padding: 15px;
+  background: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .main-container {
+    margin: 10px;
+    border-radius: 8px;
+  }
+  
+  .name {
+    font-size: 28px;
+  }
+  
+  /* .spotlight-badge {
+    font-size: 9px;
+    padding: 3px 6px;
+  } */
 }
